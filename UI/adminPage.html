@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EPIC MAIL</title>
+    <link href="./style/style.css" type="text/css" rel="stylesheet"/>
+    <script src="script/navigationMenuSlider.js"></script>
+    <script src="script/Member.js"></script>
+    <script src="script/Group.js"></script>
+    <script src="script/Dialog.js"></script>
+    <script src="script/EntityViewer.js"></script>
+    <script src="script/MockData.js"></script>
+    <script src="script/createGroupUI.js"></script>
+</head>
+<body onload="viewGroupUI()">
+
+<div id="headerSection">
+    <img src="./shapes/hamburger.svg" id="hamburger" alt="hamburger" onclick="openNav()"/>
+    <p id="headerTitle"></p>
+</div>
+
+<div id="navigationMenu">
+    <a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+    <p>
+        <img src="./shapes/envelope.svg" alt="envelope"/>
+        EPIC MAIL!
+    </p>
+    <a href="javascript:void(0)" onclick="createGroupUI()">Create Group</a>
+    <a href="javascript:void(0)" onclick="viewGroupUI()">View Group</a>
+    <a href="./signInPage.html">Quit</a>
+</div>
+
+<div id="content"></div>
+
+</body>
+</html>
