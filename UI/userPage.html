@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EPIC MAIL</title>
+    <link href="./style/style.css" type="text/css" rel="stylesheet"/>
+
+    <script src="script/navigationMenuSlider.js"></script>
+    <script src="script/composeMailUI.js"></script>
+    <script src="script/Message.js"></script>
+    <script src="script/Sender.js"></script>
+    <script src="script/MessagesItem.js"></script>
+    <script src="script/ItemViewer.js"></script>
+    <script src="script/MockData.js"></script>
+    <script src="script/MessagesUI.js"></script>
+    <script src="script/ResetPasswordUI.js"></script>
+</head>
+
+<body onload="displayInbox()">
+<div id="headerSection">
+    <img id="hamburger" src="./shapes/hamburger.svg" alt="hamburger" onclick="openNav()"/>
+    <p id="headerTitle"></p>
+</div>
+<div id="navigationMenu">
+    <a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+    <p>
+        <img src="./shapes/envelope.svg" alt="envelope"/>
+        EPIC MAIL!
+    </p>
+    <a href="javascript:void(0)" onclick="buildComposeMailUI()">Compose Mail</a>
+    <a href="javascript:void(0)" onclick="displayInbox()">Inbox</a>
+    <a href="javascript:void(0)" onclick="displaySentItems()">Sent</a>
+    <a href="javascript:void(0)" onclick="displayDraft()">Draft</a>
+    <a href="javascript:void(0)" onclick="displayPasswordResetUI()">Reset</a>
+    <a href="./signInPage.html">Quit</a>
+</div>
+
+<div id="content"></div>
+
+</body>
+</html>
