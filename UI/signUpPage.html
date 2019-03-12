@@ -9,24 +9,23 @@
 <body class="background">
 <header class="header">
     <img src="./shapes/envelope.svg" alt="envelope"/>
-    EPIC MAIL!
+    <span>EPIC MAIL!</span>
 </header>
 
 <article>
     <div class="authenticationSection">
-        <form id="signUpForm">
-            <label for="email">Email/username:</label>
-            <input id="email" type="text" placeholder="Please enter valid email/username" required/>
+        <form class="authForms" id="signUpForm">
+            <p>Sign Up</p>
+            <label for="email">Email:</label>
+            <input id="email" type="text" required/>
             <label for="password">Password:</label>
-            <input id ="password" type="password" placeholder="Please enter password" required/>
+            <input id="password" type="password" required/>
             <label for="repeatPassword">Repeat Password:</label>
-            <input id="repeatPassword" type="password" placeholder="Please repeat password" required/>
+            <input id="repeatPassword" type="password" required/>
             <button id="signUpButton" class="formActionButton" onclick="authenticate()">SIGN UP</button>
+            <a href="signInPage.html">Already have an account, <span>Sign In.</span></a>
         </form>
-        <br>
-        <a href="signInPage.html">Already have an account, Sign In.</a>
     </div>
-    <br>
 </article>
 </body>
 </html>
