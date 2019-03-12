@@ -13,17 +13,16 @@
 </header>
 <article>
     <div class="authenticationSection">
-        <form id="signInForm">
-            <label for="email">Email/Username:</label>
-            <input id="email" type="text" placeholder="Please enter email/username" required/>
+        <form class="authForms" id="signInForm">
+            <p>Sign In</p>
+            <label for="email">Email:</label>
+            <input id="email" type="text" required/>
             <label for="password">Password:</label>
-            <input id="password" type="password" placeholder="Please enter password" required/>
+            <input id="password" type="password" required/>
             <button id="signInButton" class="formActionButton" onclick="authenticate()">SIGN IN</button>
+            <a href="signUpPage.html">Don't have an account, <span>sign up.</span></a>
         </form>
-        <br>
-        <a href="signUpPage.html">
-            Don't have an account, sign up.
-        </a>
+
     </div>
 </article>
 
