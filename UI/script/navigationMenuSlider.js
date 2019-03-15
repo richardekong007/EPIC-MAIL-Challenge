@@ -7,3 +7,4 @@ function closeNav() {
     document.getElementById("navigationMenu").style.width = "0";
     document.getElementById("content").style.marginLeft = "0";
 }
+
