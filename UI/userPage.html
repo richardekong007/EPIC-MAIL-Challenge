@@ -16,13 +16,12 @@
     <script src="script/ResetPasswordUI.js"></script>
 </head>
 
-<body onload="displayInbox()">
+<body onload="displayInbox(); ">
 <div id="headerSection">
     <img id="hamburger" src="./shapes/hamburger.svg" alt="hamburger" onclick="openNav()"/>
     <p id="headerTitle"></p>
 </div>
 <div id="navigationMenu">
-    <a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
     <p>
         <img src="./shapes/envelope.svg" alt="envelope"/>
         EPIC MAIL!
@@ -32,7 +31,7 @@
     <a href="javascript:void(0)" onclick="displaySentItems()">Sent</a>
     <a href="javascript:void(0)" onclick="displayDraft()">Draft</a>
     <a href="javascript:void(0)" onclick="displayPasswordResetUI()">Reset</a>
-    <a href="./signInPage.html">Quit</a>
+    <a href="./signInPage.html">Sign out</a>
 </div>
 
 <div id="content"></div>
