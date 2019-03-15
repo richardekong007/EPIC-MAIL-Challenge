@@ -27,6 +27,10 @@ body {
     font-weight: bolder;
 }
 
+#description li{
+    font-size:25px;
+}
+
 .authenticationSection {
     position: absolute;
     top: 20%;
