@@ -14,6 +14,19 @@ body {
     margin-top:50px;
 }
 
+#description{
+    position:absolute;
+    top:20%;
+    left:10%;
+    color:#3777bc;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+#description p {
+    font-weight: bolder;
+}
+
 .authenticationSection {
     position: absolute;
     top: 20%;
@@ -53,6 +66,12 @@ body {
 
 .authForms a {
     grid-column: 1/3;
+}
+
+#signUpAuthenticationSection{
+    position:absolute;
+    top:10%;
+    left:65%;
 }
 
 #signUpForm p{
@@ -550,4 +569,23 @@ button {
     grid-column: 2/2;
     margin-top: 50px;
     width: 50%;
+}
+
+footer{
+    display:grid;
+    background-color: #3777bc;
+    color:white;
+    height: 10%;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+
+}
+
+footer p{
+    align-self:center ;
+    text-align:center;
+    font-weight: bold;
+    font-size:large;
 }
