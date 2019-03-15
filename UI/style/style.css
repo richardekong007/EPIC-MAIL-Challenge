@@ -14,6 +14,19 @@ body {
     margin-top:50px;
 }
 
+#description{
+    position:absolute;
+    top:20%;
+    left:10%;
+    color:#3777bc;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+#description p {
+    font-weight: bolder;
+}
+
 .authenticationSection {
     position: absolute;
     top: 20%;
@@ -572,4 +585,7 @@ footer{
 
 footer p{
     align-self:center ;
+    text-align:center;
+    font-weight: bold;
+    font-size:large;
 }
