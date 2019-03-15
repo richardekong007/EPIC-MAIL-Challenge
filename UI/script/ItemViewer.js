@@ -20,6 +20,13 @@ class ItemViewer {
         this._viewer.appendChild(this._dateSpan);
         this._viewer.appendChild(this._viewButton);
         this._viewer.appendChild(this._deleteButton);
+        this._viewer.addEventListener('mousemove', () => {
+            this._viewer.style.backgroundColor = '#FFF9C2';
+        });
+        this._viewer.addEventListener('mouseleave', () => {
+            this._viewer.style.backgroundColor = '';
+        });
+
     }
 
     getItem() {
@@ -30,8 +37,8 @@ class ItemViewer {
         this._item = value;
     }
 
-    setViewer(viewer){
-        if (typeof(viewer) === 'object'){
+    setViewer(viewer) {
+        if (typeof (viewer) === 'object') {
             this._viewer = viewer;
         }
     }
@@ -42,7 +49,7 @@ class ItemViewer {
 
     setIndexSpan(value) {
         this._indexSpan.setAttribute('id', 'itemViewerIndex');
-        if (typeof(value) === 'number')
+        if (typeof (value) === 'number')
             this._indexSpan.textContent = (parseInt(value)).toString();
     }
 
